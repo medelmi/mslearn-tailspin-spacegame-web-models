@@ -7,7 +7,7 @@ variables:
 
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
+  displayName: 'Use .NET Core aSDK $(dotnetSdkVersion)'
   inputs:
     version: '$(dotnetSdkVersion)'
 
@@ -31,7 +31,7 @@ steps:
     projects: '**/*.csproj'
     arguments: '--no-build --configuration $(buildConfiguration)'
     versioningScheme: byPrereleaseNumber
-    majorVersion: '1'
+    majorVersion: '2'
     minorVersion: '0'
     patchVersion: '0'
  
